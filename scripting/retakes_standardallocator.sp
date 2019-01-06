@@ -54,10 +54,10 @@ public void OnClientCookiesCached(int client) {
 static void SetNades(char nades[NADE_STRING_LENGTH]) {
     int rand = GetRandomInt(0, 3);
     switch(rand) {
-        case 0: nades = "";
-        case 1: nades = "s";
-        case 2: nades = "f";
-        case 3: nades = "h";
+        case 0: nades = "f";
+        case 1: nades = "fs";
+        case 2: nades = "ff";
+        case 3: nades = "fh";
     }
 }
 
