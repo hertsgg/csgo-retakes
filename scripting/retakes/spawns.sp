@@ -174,12 +174,12 @@ public void GiveWeapons(int client) {
         char c = g_PlayerNades[client][i];
         char weapon[32];
         switch(c) {
-            case 'h': weapon = "weapon_hegrenade";
-            case 'f': weapon = "weapon_flashbang";
-            case 'm': weapon = "weapon_molotov";
-            case 'i': weapon = "weapon_incgrenade";
-            case 's': weapon = "weapon_smokegrenade";
-            case 'd': weapon = "weapon_decoy";
+            case '': weapon = "weapon_flashbang";
+            case 'h': weapon = "weapon_flashbang;weapon_hegrenade";
+            case 'f': weapon = "weapon_flashbang;weapon_flashbang";
+            case 'm': weapon = "weapon_flashbang;weapon_molotov";
+            case 'i': weapon = "weapon_flashbang;weapon_incgrenade";
+            case 's': weapon = "weapon_flashbang;weapon_smokegrenade";
         }
         GivePlayerItem(client, weapon);
     }
